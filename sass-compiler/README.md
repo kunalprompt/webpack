@@ -19,5 +19,8 @@ To create a small utility to convert scss to css.
 ### Use:
 
 To use this application, just run `npm run bundle` after `npm install`.
+The `npm run bundle` command is defined in `package.json`.
 
-The `npm run bundle` command is defined in `package.json`
+All the source code can be put into different files in `source` directory which
+will be compiled into `/dest/bundled.css` directory. The `init.scss` is the entry
+to the source code.
