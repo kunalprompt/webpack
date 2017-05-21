@@ -2,7 +2,7 @@
 
 To create a small utility to convert scss to css.
 
-### Resource:
+### Resources:
 
 1. Webpack
 
