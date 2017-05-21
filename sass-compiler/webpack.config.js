@@ -1,7 +1,7 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
-    filename: "./public/bundled.css",
+    filename: "./dest/bundled.css",
     disable: process.env.NODE_ENV === "development"
 });
 
@@ -9,9 +9,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const config = {
     name: 'css',
-    entry: './stylesheets/init.scss',
+    entry: './source/init.scss',
     output: {
-        filename: './public/[name].js'
+        filename: './dest/[name].js'
     },
     module: {
         rules: [{
@@ -27,7 +27,7 @@ const config = {
         }]
     },
     plugins: [
-        new CleanWebpackPlugin(paths=["./public/"]),
+        new CleanWebpackPlugin(paths=["./dest/"]),
         extractSass
     ]
 };
