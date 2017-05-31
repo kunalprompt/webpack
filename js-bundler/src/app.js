@@ -1,7 +1,8 @@
-var path = require("path");
-
-var current_path = function(){
-	console.log(path)
+var author = {
+	"name": "Kunal Sharma"
+	, "Github": "github.com/kunalprompt"
+	, "Project": "Webpack JS bundler"
 }
 
-current_path();
+window.author = author;
+

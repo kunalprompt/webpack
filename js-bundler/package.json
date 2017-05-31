@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "The utility will bundle various files into a single js file",
   "scripts": {
+    "build": "./node_modules/webpack/bin/webpack.js",
     "bundle": "./node_modules/webpack/bin/webpack.js -p"
   },
   "author": "github.com/kunalprompt",
