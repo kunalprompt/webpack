@@ -1,0 +1,13 @@
+{
+  "name": "js-bundler",
+  "version": "1.0.0",
+  "description": "The utility will bundle various files into a single js file",
+  "scripts": {
+    "bundle": "./node_modules/webpack/bin/webpack.js -p"
+  },
+  "author": "github.com/kunalprompt",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}
