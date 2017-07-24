@@ -1,0 +1,112 @@
+/*
+This is the source file of scss for Unbxd Grid System
+*/
+
+$columns: 1, 2, 3, 4, 6, 8, 9, 10, 12;
+$offset_columns: 1, 2, 3, 4, 6;
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575px) {
+
+	@each $i in $columns {
+		$tmp_width: 100/12 * $i#{%};
+		.unbxd-grid-xs-#{$i} {
+			display: inline-block;
+			width: $tmp_width;
+		}
+	}
+
+	@each $i in $offset_columns {
+		$tmp_width: 100/12 * $i#{%};
+		.unbxd-grid-offset-xs-#{$i} {
+			display: inline-block;
+			margin-left: $tmp_width;
+		}
+	}
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+	@each $i in $columns {
+		$tmp_width: 100/12 * $i#{%};
+		.unbxd-grid-sm-#{$i} {
+			display: inline-block;
+			width: $tmp_width;
+		}
+	}
+
+	@each $i in $offset_columns {
+		$tmp_width: 100/12 * $i#{%};
+		.unbxd-grid-offset-sm-#{$i} {
+			display: inline-block;
+			margin-left: $tmp_width;
+		}
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+	@each $i in $columns {
+		$tmp_width: 100/12 * $i#{%};
+		.unbxd-grid-md-#{$i} {
+			display: inline-block;
+			width: $tmp_width;
+		}
+	}
+
+	@each $i in $offset_columns {
+		$tmp_width: 100/12 * $i#{%};
+		.unbxd-grid-offset-md-#{$i} {
+			display: inline-block;
+			margin-left: $tmp_width;
+		}
+	}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+	@each $i in $columns {
+		$tmp_width: 100/12 * $i#{%};
+		.unbxd-grid-lg-#{$i} {
+			display: inline-block;
+			width: $tmp_width;
+		}
+	}
+
+	@each $i in $offset_columns {
+		$tmp_width: 100/12 * $i#{%};
+		.unbxd-grid-offset-lg-#{$i} {
+			display: inline-block;
+			margin-left: $tmp_width;
+		}
+	}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+	@each $i in $columns {
+		$tmp_width: 100/12 * $i#{%};
+		.unbxd-grid-xl-#{$i} {
+			display: inline-block;
+			width: $tmp_width;
+		}
+	}
+
+	@each $i in $offset_columns {
+		$tmp_width: 100/12 * $i#{%};
+		.unbxd-grid-offset-xl-#{$i} {
+			display: inline-block;
+			margin-left: $tmp_width;
+		}
+	}
+
+}
