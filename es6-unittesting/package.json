@@ -1,0 +1,20 @@
+{
+  "name": "es6-transpiler",
+  "version": "1.0.0",
+  "description": "How to transpile es6 to classical JS",
+  "scripts": {
+    "build": "./node_modules/webpack/bin/webpack.js",
+    "test": "mocha --compilers js:./node_modules/babel-register",
+    "bundle": "./node_modules/webpack/bin/webpack.js -p"
+  },
+  "author": "github.com/kunalprompt",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "mocha": "^3.5.3",
+    "webpack": "^3.6.0"
+  }
+}
